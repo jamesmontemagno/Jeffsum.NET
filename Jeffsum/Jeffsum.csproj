@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.0</TargetFramework>
+    <Product>$(AssemblyName) ($(TargetFramework))</Product>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyFileVersion>1.0.0.0</AssemblyFileVersion>
+    <Version>1.0.0.0</Version>
+    <PackageVersion>1.0.0.0</PackageVersion>
+    <Authors>James Montemagno</Authors>
+    <PackageId>Jeffsum</PackageId>
+    <PackageIconUrl>https://raw.githubusercontent.com/jamesmontemagno/jeffsum.net/master/art/Icon.png</PackageIconUrl>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/jamesmontemagno/jeffsum.net/master/LICENSE.md</PackageLicenseUrl>
+    <Owners>James Montemagno</Owners>
+    <PackageProjectUrl>https://github.com/jamesmontemagno/jeffsum.net</PackageProjectUrl>
+    <Summary>Jeff Goldblum text placeholder generator of pure amazingness. (Unofficial .NET version of Jeffsum.com by @seanehalpin)</Summary>
+    <PackageTags></PackageTags>
+    <Title>Jeffsum.NET 🐒</Title>
+    <Description>Jeff Goldblum text placeholder generator of pure amazingness. (Unofficial .NET version of Jeffsum.com by @seanehalpin)</Description>
+    <Copyright>2018 Refractored LLC &amp; James Montemagno</Copyright>
+    <RepositoryUrl>https://github.com/jamesmontemagno/jeffsum.net</RepositoryUrl>
+    <PackageReleaseNotes>See: https://github.com/jamesmontemagno/jeffsum.net/blob/master/CHANGELOG.md </PackageReleaseNotes>
+    <LangVersion>default</LangVersion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <RootNamespace>Jeffsum</RootNamespace>
+    <GenerateDocumentationFile Condition=" '$(Configuration)' == 'Release' ">true</GenerateDocumentationFile>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition=" '$(Configuration)'=='Debug' ">
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)'=='Release' And '$(OS)' == 'Windows_NT' ">
+    <DebugType>pdbonly</DebugType>
+    <!-- sourcelink: Declare that the Repository URL can be published to NuSpec -->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <!-- sourcelink: Embed source files that are not tracked by the source control manager to the PDB -->
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <!-- sourcelink: Include PDB in the built .nupkg -->
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta-63127-02" PrivateAssets="All"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="quotes.csv" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="quotes.csv" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jeffsum", "Jeffsum\Jeffsum.csproj", "{CF55B524-C771-430F-BD18-50C8F287DEE6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jeffsum.Tests", "Jeffsum.Tests\Jeffsum.Tests.csproj", "{D18AB50F-87E2-4E16-9A8C-495B6FB3C7EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2BDAD695-2E04-40EF-84C9-9797E8039897}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		CHANGELOG.md = CHANGELOG.md
+		LICENSE.md = LICENSE.md
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF55B524-C771-430F-BD18-50C8F287DEE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF55B524-C771-430F-BD18-50C8F287DEE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF55B524-C771-430F-BD18-50C8F287DEE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF55B524-C771-430F-BD18-50C8F287DEE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D18AB50F-87E2-4E16-9A8C-495B6FB3C7EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D18AB50F-87E2-4E16-9A8C-495B6FB3C7EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D18AB50F-87E2-4E16-9A8C-495B6FB3C7EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D18AB50F-87E2-4E16-9A8C-495B6FB3C7EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {010AA234-8DA6-41FD-AD5F-17F346C31FF3}
+	EndGlobalSection
+EndGlobal
