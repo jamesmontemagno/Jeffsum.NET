@@ -10,6 +10,9 @@ using System.Text;
 
 namespace Jeffsum
 {
+    /// <summary>
+    /// Quickly receive Jeffsum for your application
+    /// </summary>
     public static class Goldblum
     {
         static List<string> Quotes { get; set; }
@@ -34,6 +37,11 @@ namespace Jeffsum
             }
         }
 
+        /// <summary>
+        /// Receive Jeffsum in paragraph form.
+        /// </summary>
+        /// <param name="paragraphCount">Number of paragraphs that you would like between 1-99.</param>
+        /// <returns>Jeffsum for specified paragraphs</returns>
         public static IEnumerable<string> ReceiveTheJeff(int paragraphCount)
         {
             if (!paragraphCount.ValidRange(1, 99))
