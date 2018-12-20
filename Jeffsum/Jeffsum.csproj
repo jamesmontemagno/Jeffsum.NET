@@ -9,7 +9,7 @@
     <PackageVersion>1.0.0.0</PackageVersion>
     <Authors>James Montemagno</Authors>
     <PackageId>Jeffsum</PackageId>
-    <PackageIconUrl>https://raw.githubusercontent.com/jamesmontemagno/Jeffsum.NET/master/art/nuget_icon.png</PackageIconUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/jamesmontemagno/Jeffsum.NET/master/Art/nuget_icon.png</PackageIconUrl>
     <NeutralLanguage>en</NeutralLanguage>
     <PackageLicenseUrl>https://raw.githubusercontent.com/jamesmontemagno/Jeffsum.NET/master/LICENSE.md</PackageLicenseUrl>
     <Owners>James Montemagno</Owners>
