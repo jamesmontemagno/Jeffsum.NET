@@ -2,6 +2,11 @@
 
 Jeff Goldblum text placeholder generator of pure amazingness. (Unofficial .NET version of Jeffsum.com by @seanehalpin)
 
+
+[![Build status](https://dev.azure.com/jamesmontemagno/Jeffsum/_apis/build/status/Jeffsum-CI)](https://dev.azure.com/jamesmontemagno/Jeffsum/_build/latest?definitionId=28)
+
+Development feed: https://www.myget.org/F/jeffsum/api/v3/index.json
+
 ## License
 The MIT License (MIT) see [License file](LICENSE)
 
