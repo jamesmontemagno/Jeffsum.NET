@@ -5,7 +5,13 @@ Jeff Goldblum text placeholder generator of pure amazingness. (Unofficial .NET v
 
 [![Build status](https://dev.azure.com/jamesmontemagno/Jeffsum/_apis/build/status/Jeffsum-CI)](https://dev.azure.com/jamesmontemagno/Jeffsum/_build/latest?definitionId=28)
 
-Development feed: https://www.myget.org/F/jeffsum/api/v3/index.json
+**NuGets**
+
+|Name|Info|
+| ------------------- | :------------------: |
+|Jeffsum.NET|[![NuGet](https://img.shields.io/nuget/v/Jeffsum.svg?label=NuGet)](https://www.nuget.org/packages/Jeffsum/)|
+|Development Feed|[MyGet](https://www.myget.org/F/jeffsum/api/v3/index.json)|
+
 
 ## License
 The MIT License (MIT) see [License file](LICENSE)
