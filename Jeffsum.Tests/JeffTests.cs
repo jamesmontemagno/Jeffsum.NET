@@ -2,6 +2,8 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Linq;
 
+using static Jeffsum.Goldblum;
+
 namespace Jeffsum.Tests
 {
     [TestClass]
@@ -10,7 +12,7 @@ namespace Jeffsum.Tests
         [TestMethod]
         public void ReceiveOneJeff()
         {
-            var jeffs = Goldblum.ReceiveTheJeff(1);
+            var jeffs = ReceiveTheJeff(1, JeffsumType.Paragraphs);
 
             Assert.AreEqual(1, jeffs.Count());
             Assert.IsTrue(jeffs.First().Length > 0);
@@ -21,11 +23,57 @@ namespace Jeffsum.Tests
         {
             var random = new Random();
             var count = random.Next(1, 10);
-            var jeffs = Goldblum.ReceiveTheJeff(count);
+            var jeffs = Goldblum.ReceiveTheJeff(count, JeffsumType.Paragraphs);
 
             Assert.AreEqual(count, jeffs.Count());
             for (var i = 0; i < count; i++)
                 Assert.IsTrue(jeffs.ElementAt(i).Length > 0);
+        }
+
+        [TestMethod]
+        public void ReceiveOneJeffQuote()
+        {
+            var jeffs = Goldblum.ReceiveTheJeff(1, JeffsumType.Quotes);
+
+            Assert.AreEqual(1, jeffs.Count());
+            Assert.IsTrue(jeffs.First().Length > 0);
+        }
+
+        [TestMethod]
+        public void ReceiveMultiJeffQuote()
+        {
+            var random = new Random();
+            var count = random.Next(1, 10);
+            var jeffs = Goldblum.ReceiveTheJeff(count, JeffsumType.Quotes);
+
+            Assert.AreEqual(count, jeffs.Count());
+            for (var i = 0; i < count; i++)
+                Assert.IsTrue(jeffs.ElementAt(i).Length > 0);
+        }
+
+        [TestMethod]
+        public void ReceiveOneJeffWord()
+        {
+            var jeffs = Goldblum.ReceiveTheJeff(1, JeffsumType.Words);
+
+            Assert.AreEqual(1, jeffs.Count());
+            Assert.IsTrue(jeffs.First().Length > 0);
+            Assert.IsFalse(jeffs.First().Contains(" "));
+        }
+
+        [TestMethod]
+        public void ReceiveMultiJeffWord()
+        {
+            var random = new Random();
+            var count = random.Next(1, 10);
+            var jeffs = Goldblum.ReceiveTheJeff(count, JeffsumType.Words);
+
+            Assert.AreEqual(count, jeffs.Count());
+            for (var i = 0; i < count; i++)
+            {
+                Assert.IsTrue(jeffs.ElementAt(i).Length > 0);
+                Assert.IsFalse(jeffs.ElementAt(i).Contains(" "));
+            }
         }
 
         [TestMethod]
